@@ -171,6 +171,10 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.device@1.0 \
     libxml2
 
+# Recorder
+PRODUCT_PACKAGES += \
+    KimciRecorder
+
 # CNE
 PRODUCT_PACKAGES += \
     cneapiclient \
