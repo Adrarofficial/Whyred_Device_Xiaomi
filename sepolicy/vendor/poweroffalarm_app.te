@@ -1,1 +1,4 @@
 allow poweroffalarm_app cgroup:file write;
+
+# Dolby
+type vendor_dolby_loglevel_prop, property_type;
