@@ -51,7 +51,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Maintainer
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.xtended.maintainer=Sreekanth
+    ro.anceint.maintainer=Sreekanth
 
 TARGET_VENDOR := Xiaomi
 TARGET_BOOT_ANIMATION_RES := 1080
