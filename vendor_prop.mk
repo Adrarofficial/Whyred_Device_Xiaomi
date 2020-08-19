@@ -54,6 +54,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio.volume.headset.gain.depcal=true
 
+# Dolby
+
+vendor.audio.dolby.ds2.enabled=true
+
 #add dynamic feature flags here
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio.feature.a2dp_offload.enable=false \
