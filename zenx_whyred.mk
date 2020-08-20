@@ -25,13 +25,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Inherit from whyred device
 $(call inherit-product, device/xiaomi/whyred/device.mk)
 
-# Inherit some common Xtended stuff.
-$(call inherit-product, vendor/ancient/config/common_full_phone.mk)
+# Inherit some common ZenX stuff.
+$(call inherit-product, vendor/zenx/config/common_full_phone.mk)
 
 # Inherit from custom vendor
 $(call inherit-product, vendor/MiuiCamera/config.mk)
 
-PRODUCT_NAME := ancient_whyred
+PRODUCT_NAME := zenx_whyred
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := whyred
 PRODUCT_MANUFACTURER := Xiaomi
@@ -53,5 +53,5 @@ TARGET_FACE_UNLOCK_SUPPORT := true
 
 TARGET_VENDOR := Xiaomi
 TARGET_BOOT_ANIMATION_RES := 1080
-ANCIENT_BUILD_TYPE=WALKERZ-EDITION
+ZENX_BUILD_TYPE=WALKERZ-EDITION
 SKIP_ABI_CHECKS=true
