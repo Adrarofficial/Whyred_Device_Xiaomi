@@ -25,11 +25,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Inherit from whyred device
 $(call inherit-product, device/xiaomi/whyred/device.mk)
 
-# Inherit some common Xtended stuff.
+# Inherit some common Ancient stuff.
 $(call inherit-product, vendor/ancient/config/common_full_phone.mk)
 
 # Inherit from custom vendor
 $(call inherit-product, vendor/MiuiCamera/config.mk)
+
+# Welcome in Gapps word!
+TARGET_GAPPS_ARCH := arm64
+IS_PHONE := true
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
 
 PRODUCT_NAME := ancient_whyred
 PRODUCT_BRAND := Xiaomi
@@ -52,6 +58,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
 TARGET_FACE_UNLOCK_SUPPORT := true
 
 TARGET_VENDOR := Xiaomi
-TARGET_BOOT_ANIMATION_RES := 1080
 ANCIENT_BUILD_TYPE=WALKERZ-EDITION
 SKIP_ABI_CHECKS=true
